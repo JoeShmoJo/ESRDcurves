@@ -66,4 +66,5 @@ def plot_grids(config):
         "dfSurchargeCurve": envelope,
         "curve_dfs": overlays,
         "param_dict": params,
+        "dfTitleBlock": frame[["Line", "Text"]].dropna(),
     }

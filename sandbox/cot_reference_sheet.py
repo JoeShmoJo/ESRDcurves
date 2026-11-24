@@ -3,6 +3,7 @@
 import argparse
 from pathlib import Path
 import tempfile
+from textwrap import fill
 
 from cot_composite import SOURCE, read_recession_hours, run_legacy
 
@@ -205,25 +206,82 @@ def add_example(ax, lines, inflow, code):
     return f"{elevation:g} ft with {measurement} → about {round(release * 10) * 100:,} cfs"
 
 
+def add_title_block(fig, full, inflow, code, *, landscape):
+    """Set the source title-block text beside the interpretation notes."""
+    source = full["dfTitleBlock"]
+    lines = [" ".join(str(value).split()) for value in source.Text]
+    lines = [line for line in lines if line and "Reservoir" not in line]
+    if not lines:
+        envelope = full["dfSurchargeCurve"].Env_Elev.max()
+        dam_crest = {"DET": 1579, "HCR": 1548}.get(code)
+        lines = [f"Plotted surcharge envelope – {envelope:g} ft", "All elevations in project datum"]
+        if dam_crest:
+            lines.extend([f"Top of dam – {dam_crest:g} ft", "U.S. Army Corps of Engineers",
+                          "Portland District", "August 2024 draft"])
+        else:
+            lines.append("Legacy title block unavailable")
+
+    # Draft_Curve.pdf repeats the inflow wording on several rate-of-rise pages.
+    # Carry over the verified periods only for the corresponding measurement.
+    draft_hours = {"BLU": 3, "CGR": 3, "COT": 3, "DET": 3, "DOR": 3,
+                   "FAL": 3, "FOS": 2, "FRN": 3, "GPR": 3, "HCR": 3, "LOP": 2}
+    verified_rise = {"FAL", "FOS", "GPR", "LOP"}
+    if code in draft_hours:
+        heading = "NOTES FROM THE DRAFT CURVE"
+        if inflow or code in verified_rise:
+            measurement = "inflow" if inflow else "pool elevation rate of change"
+            basis = f"Use the preceding {draft_hours[code]}-hour average {measurement} and current pool elevation."
+        else:
+            basis = "Use current pool elevation and the pool-rise averaging period in the water control manual."
+        notes = [
+            "1. Follow the regular flood-control schedule until the chart indicates a larger release.",
+            f"2. {basis}",
+            "3. At maximum pool elevation, release inflow until downstream stages fall below bankfull. Then keep releases at or below bankfull until the flood pool is evacuated.",
+        ]
+    else:
+        heading = "NOTES"
+        notes = [
+            "Method: EM 1110-2-3600 (2017), section 4.5.4.",
+            "Maximum-discharge curves show design capacity. Project limits may apply to gate openings and concurrent outlet use.",
+            "Use the averaging period specified in the project's water control manual.",
+        ]
+    x_left = 0.075 if landscape else 0.125
+    headings_y = 0.158 if landscape else 0.164
+    fig.add_artist(plt.Line2D([x_left, 0.95], [headings_y + 0.024] * 2,
+                             transform=fig.transFigure, color="#a6b6c0", lw=0.8))
+    for x, heading, body in (
+        (x_left, "TITLE BLOCK", "\n".join(lines)),
+        (0.51, heading, "\n".join(fill(note, width=76 if landscape else 58) for note in notes)),
+    ):
+        fig.text(x, headings_y, heading, color=INK, fontsize=8.5, weight="bold")
+        fig.text(x, headings_y - 0.015, body, color=INK, fontsize=8, va="top", linespacing=1.2)
+
+
 def write_sheet(full, detail, inflow, output, code="COT", title="Cottage Grove Reservoir",
-                formats=("pdf", "png")):
-    fig, (main, zoom) = plt.subplots(2, 1, figsize=(8.5, 11))
-    fig.subplots_adjust(left=0.125, right=0.95, top=0.825, bottom=0.126, hspace=0.29)
-    fig.text(0.125, 0.96, title, fontsize=21, color=INK, weight="bold")
+                formats=("pdf", "png"), inset=False):
+    if inset:
+        fig, main = plt.subplots(figsize=(13, 9))
+        fig.subplots_adjust(left=0.075, right=0.95, top=0.825, bottom=0.289)
+        zoom = main.inset_axes([0.48, 0.115, 0.49, 0.42])
+    else:
+        fig, (main, zoom) = plt.subplots(2, 1, figsize=(8.5, 11))
+        fig.subplots_adjust(left=0.125, right=0.95, top=0.825, bottom=0.278, hspace=0.36)
+    left = 0.075 if inset else 0.125
+    fig.text(left, 0.96, title, fontsize=21, color=INK, weight="bold")
     heading = "Inflow" if inflow else "Rate of rise"
     units = "inflow in 1,000 cfs" if inflow else "pool rise in ft/hr"
-    fig.text(0.125, 0.923, f"{heading} · Emergency Spillway Release Diagram",
+    fig.text(left, 0.923, f"{heading} · Emergency Spillway Release Diagram",
              fontsize=12, color=INK)
-    fig.text(0.125, 0.890, f"Curve labels show {units}. From pool elevation, trace across to",
+    fig.text(left, 0.890, f"Curve labels show {units}. From pool elevation, trace across to",
              fontsize=9.5, color=INK)
-    fig.text(0.125, 0.872, "the matching curve, then down to read reservoir release.",
+    fig.text(left, 0.872, "the matching curve, then down to read reservoir release.",
              fontsize=9.5, color=INK)
 
     full_lines, bounds = plot_panel(main, full, inflow, detail=False, code=code)
     zoom_lines, zoom_bounds = plot_panel(zoom, detail, inflow, detail=True, code=code)
     main.set_title("Full release range", loc="left", fontsize=11, weight="bold", color=INK)
     zoom.set_title("Zoomed view", loc="left", fontsize=11, weight="bold", color=INK)
-    fig.legend(handles=bounds, loc="lower left", bbox_to_anchor=(0.115, 0.017),
+    fig.legend(handles=bounds, loc="lower left", bbox_to_anchor=(left - 0.01, 0.192),
                ncol=len(bounds), fontsize=8, frameon=False, labelcolor=INK)
     fig.canvas.draw()
     shown_main = label_panel(main, full_lines, bounds)
@@ -233,9 +291,10 @@ def write_sheet(full, detail, inflow, output, code="COT", title="Cottage Grove R
         fig.text(0.95, 0.872, "Selected contours shown", ha="right", fontsize=8.5, color=INK)
     example = add_example(zoom, shown_zoom, inflow, code)
     if example:
-        fig.text(0.125, 0.060, f"Worked example   {example}",
+        fig.text(left, 0.222, f"Worked example   {example}",
                  fontsize=9.5, color=EXAMPLE, weight="bold")
-    name = f"{code}_{'inflow' if inflow else 'rate_of_rise'}_reference"
+    add_title_block(fig, full, inflow, code, landscape=inset)
+    name = f"{code}_{'inflow' if inflow else 'rate_of_rise'}_{'inset' if inset else 'reference'}"
     for extension in formats:
         fig.savefig(output / f"{name}.{extension}", dpi=240)
     plt.close(fig)

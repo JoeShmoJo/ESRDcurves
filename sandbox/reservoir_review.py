@@ -48,9 +48,14 @@ def derive_zoom(full):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=SOURCE.parent / "review" / "esrd")
+    parser.add_argument("--output", type=Path, default=SOURCE.parent / "review" / "esrd" / "png")
     parser.add_argument("--reservoir", choices=RESERVOIRS, action="append")
+    parser.add_argument("--inset", action="store_true", help="Render the Cottage Grove inset trial")
     args = parser.parse_args()
+    if args.inset and args.reservoir not in (None, ["COT"]):
+        parser.error("The inset trial is currently tuned for Cottage Grove.")
+    if args.inset:
+        args.reservoir = ["COT"]
     output = args.output.resolve()
     output.mkdir(parents=True, exist_ok=True)
 
@@ -67,7 +72,7 @@ def main():
             kind = "inflow" if inflow else "rate of rise"
             try:
                 counts = write_sheet(full, detail, inflow, output, code=code,
-                            title=f"{RESERVOIRS[code]} Reservoir", formats=("pdf",))
+                            title=f"{RESERVOIRS[code]} Reservoir", formats=("png",), inset=args.inset)
                 print(f"{code} {kind}: saved (full {counts[0]}/{counts[1]}, zoom {counts[2]}/{counts[3]})", flush=True)
             except ValueError as error:
                 print(f"{code} {kind}: {error}", flush=True)
