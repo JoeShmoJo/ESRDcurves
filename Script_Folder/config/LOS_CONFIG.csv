@@ -1,0 +1,57 @@
+﻿"ESRD script Config File. Script calculates Emergency Spillway Release Diagram (ESRD), otherwise known as special curves, using methodology outlined in EM 1110-2-3600 (2017 version), section 4.5.4",,,,,,,,,,,,,,,
+Storage Elevation Curve from https://nwp-wmops.nwp.usace.army.mil/nwp/ratings/www/rating_links/(XXX).txt .  Curves smoothed with spline regression below min con and with Poly 3rd degree between min con and top of dam. ,,,,,,,,,,,,,,,
+Release capacity is the Design Capactiy of  Regulating Outlet plus the greater of the capacity of the Penstock or the Spillway (transisiton from penstock to spillway when above spillway). Design capacity may be lower than actual capacity,,,,,,,,,,,,,,,
+Plot Parameters may need to be modified for each plot,,,,,,,,,,,,,,,
+Elevation Storage Max Release,,,Plot Parameters,,Title_Block,,ESRD Envelope,,,,,,,,
+Elev,Stor,MaxRel,Param,Values,Line,Text,Env_Elev,Release,TS,Reservoir,CurveName1,Label_X_Coord,Label_Angle,X1,Y1
+1823,303256,0,X_Lable_Angle,33,line1,Lost Creek Reservoir,1872,0,33.5,LOS,Spillway Only,25000,40,1823,0
+1824,305989,250,X_Min,0,line2,Special Curve ,1872,400000,,,,,,1824,250
+1825,308735,875,X_Max,160000,line3,Maximum Pool Elevation - 1872 Ft,,,,,,,,1825,875
+1826,311493,2000,X_Step,10000,line4,Top of Dam - 1882 Ft,,,,,,,,1826,2000
+1827,314265,3500,Y_Min,1825,line5,All Elevation Project Datum,,,,,,,,1827,3500
+1828,317048,5000,Y_Max,1875,line6,U.S. Army Corps of Engineers,,,,,,,,1828,5000
+1829,319845,6750,Y_Step,5,line7,Portland District,,,,,,,,1829,6750
+1830,322655,8500,Inflow_Min,10000,line8,                                                                 ,,,,,,,,1830,8500
+1831,325476,10250,Inflow_Max,170000,line9,December 2023         CENWP-ENC-HY,,,,,,,,1831,10250
+1832,328311,12000,Inflow_Step,10000,line10,                                     JER,,,,,,,,1832,12000
+1833,331158,14000,Inflow_Xlabel_Y_Buffer,0,,,,,,,,,,1833,14000
+1834,334018,16000,Inflow_Xlabel_FirstX,4000,,,,,,,,,,1834,16000
+1835,336891,18250,Inflow_Xlabel_Step,6600,,,,,,,,,,1835,18250
+1836,339777,20500,Inflow_Label_Angle,45,,,,,,,,,,1836,20500
+1837,342677,23125,ROC_Min,1,,,,,,,,,,1837,23125
+1838,345589,25750,ROC_Max,5,,,,,,,,,,1838,25750
+1839,348514,28375,ROC_Step,0.5,,,,,,,,,,1839,28375
+1840,351452,31000,ROC_Xlabel_Y_Buffer,0,,,,,,,,,,1840,31000
+1841,354403,33875,ROC_Xlabel_FirstX,7000,,,,,,,,,,1841,33875
+1842,357366,36750,ROC_Xlabel_Step,750,,,,,,,,,,1842,36750
+1843,360341,39625,ROC_Label_Angle,25,,,,,,,,,,1843,39625
+1844,363329,42500,,,,,,,,,,,,1844,42500
+1845,366329,45750,,,,,,,,,,,,1845,45750
+1846,369341,49000,,,,,,,,,,,,1846,49000
+1847,372362,52250,,,,,,,,,,,,1847,52250
+1848,375391,55500,,,,,,,,,,,,1848,55500
+1849,378430,59250,,,,,,,,,,,,1849,59250
+1850,381477,63000,,,,,,,,,,,,1850,63000
+1851,384534,66750,,,,,,,,,,,,1851,66750
+1852,387600,70500,,,,,,,,,,,,1852,70500
+1853,390674,74375,,,,,,,,,,,,1853,74375
+1854,393758,78250,,,,,,,,,,,,1854,78250
+1855,396850,82125,,,,,,,,,,,,1855,82125
+1856,399952,86000,,,,,,,,,,,,1856,86000
+1857,403062,90250,,,,,,,,,,,,1857,90250
+1858,406181,94500,,,,,,,,,,,,1858,94500
+1859,409310,98750,,,,,,,,,,,,1859,98750
+1860,412448,103000,,,,,,,,,,,,1860,103000
+1861,415595,107250,,,,,,,,,,,,1861,107250
+1862,418751,111500,,,,,,,,,,,,1862,111500
+1863,421917,115750,,,,,,,,,,,,1863,115750
+1864,425092,120000,,,,,,,,,,,,1864,120000
+1865,428276,124500,,,,,,,,,,,,1865,124500
+1866,431470,129000,,,,,,,,,,,,1866,129000
+1867,434673,133500,,,,,,,,,,,,1867,133500
+1868,437886,138000,,,,,,,,,,,,1868,138000
+1869,441108,143000,,,,,,,,,,,,1869,143000
+1870,444341,148000,,,,,,,,,,,,1870,148000
+1871,447585,153000,,,,,,,,,,,,1871,153000
+1872,450837,158000,,,,,,,,,,,,1872,158000
+1872.01,454100,400000,,,,,,,,,,,,,

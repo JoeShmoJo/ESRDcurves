@@ -1,0 +1,36 @@
+﻿"Elev-stor-max release table for Detroit Dam starting from spillway crest. Elev-Stor from ResSim model from EIS. Max release table includes the spillway only. Max release is free-flow for all gates, from ""Freeflow"" sheet, ""All gates calc"" column in ""DET SP Curves 2022_restriction_1569.xlsm"" from ENC-HD",,,,,,,,,,,,,,,
+Induced Surcharge Curve. See curve E of Figure 4-2 of EM 1110-2-3600. The last value should be in-line with the max release capacity table.,,,,,,,,,,,,,,,
+TS from WCM,,,,,,,,,,,,,,,
+Plot Parameters may need to be modified for each plot,,,,,,,,,,,,,,,
+Elevation Storage Max Release,,,Plot Parameters,,Title_Block,,ESRD Envelope,,,,,,,,
+Elev,Stor,MaxRel,Param,Values,Line,Text,Env_Elev,Release,TS,Reservoir,CurveName1,Label_X_Coord,Label_Angle,X1,Y1
+340,0,0,X_Lable_Angle,33,line1,Fern Ridge Reservoir,375.5,0,27,FRN,Spillway Only,30000,25,359,0
+349,418,0,X_Min,0,line2,Special Curve ,375.5,300000,,,,,,360,1200
+350,604.427059,3360,X_Max,60000,line3,Maximum Pool Elevation - 375.5 Ft,,,,,,,,361,2580
+351,1179.955793,3660,X_Step,5000,line4,Top of Dam - 379.5 Ft,,,,,,,,362,4200
+352,1900.865238,3940,Y_Min,355,line5,All Elevation Project Datum,,,,,,,,363,6360
+353,2802.333324,4240,Y_Max,380,line6,U.S. Army Corps of Engineers,,,,,,,,364,8700
+354,3897.058681,4540,Y_Step,5,line7,Portland District,,,,,,,,365,11700
+355,5247.160982,4860,Inflow_Min,5000,line8,                                                                 ,,,,,,,,366,14700
+356,6896.474735,5120,Inflow_Max,95000,line9,December 2023         CENWP-ENC-HY,,,,,,,,367,18150
+357,8842.222733,5420,Inflow_Step,10000,line10,                                     JER,,,,,,,,368,21600
+358,11084.53581,5800,Inflow_Xlabel_Y_Buffer,0.5,,,,,,,,,,369,25200
+359,13663.13902,6020,Inflow_Xlabel_FirstX,1000,,,,,,,,,,370,28860
+360,16591.05607,7440,Inflow_Xlabel_Step,2900,,,,,,,,,,371,32700
+361,19866.67522,9040,Inflow_Label_Angle,45,,,,,,,,,,372,36720
+362,23487.92669,10860,ROC_Min,0.25,,,,,,,,,,373,40860
+363,27466.64902,13220,ROC_Max,1.75,,,,,,,,,,374,45180
+364,31926.92235,15720,ROC_Step,0.25,,,,,,,,,,375,49620
+365,36883.92767,18900,ROC_Xlabel_Y_Buffer,0.2,,,,,,,,,,,
+366,42337.66497,22060,ROC_Xlabel_FirstX,1000,,,,,,,,,,,
+367,48287.11807,25670,ROC_Xlabel_Step,1300,,,,,,,,,,,
+368,54731.56912,29260,ROC_Label_Angle,41,,,,,,,,,,,
+369,61732.27908,32980,,,,,,,,,,,,,
+370,69110.36571,36760,,,,,,,,,,,,,
+371,76786.28673,40720,,,,,,,,,,,,,
+372,84760.48752,44840,,,,,,,,,,,,,
+373,93033.75971,49080,,,,,,,,,,,,,
+374,101605.7448,49300,,,,,,,,,,,,,
+375,110476.3165,49620,,,,,,,,,,,,,
+375.5,115024,51900,,,,,,,,,,,,,
+375.501,115024.001,300001,,,,,,,,,,,,,

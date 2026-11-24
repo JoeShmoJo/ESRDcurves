@@ -1,0 +1,968 @@
+Reservoir,Outlet,Elevation,Release Capacity
+Big Cliff,Spillway,1106,2999997
+Big Cliff,Spillway,1120,2999997
+Big Cliff,Spillway,1140,2999997
+Big Cliff,Spillway,1160,2999997
+Big Cliff,Spillway,1180,2999997
+Big Cliff,Spillway,1190,2999997
+Big Cliff,Spillway,1200,2999997
+Big Cliff,Spillway,1206,2999997
+Big Cliff,Spillway,1210,2999997
+Big Cliff,Power Plant,1130,3200
+Big Cliff,Power Plant,1161.5,3200
+Big Cliff,Power Plant,1182,3200
+Big Cliff,Power Plant,1194,3300
+Big Cliff,Power Plant,1210,3100
+Detroit,Spillway,1543,2520
+Detroit,Spillway,1544,4320
+Detroit,Spillway,1545,6480
+Detroit,Spillway,1546,9000
+Detroit,Spillway,1547,11880
+Detroit,Spillway,1548,15120
+Detroit,Spillway,1549,18720
+Detroit,Spillway,1550,22680
+Detroit,Spillway,1551,27120
+Detroit,Spillway,1552,31920
+Detroit,Spillway,1553,37020
+Detroit,Spillway,1554,42420
+Detroit,Spillway,1555,48060
+Detroit,Spillway,1556,53880
+Detroit,Spillway,1557,59820
+Detroit,Spillway,1558,65820
+Detroit,Spillway,1559,71940
+Detroit,Spillway,1560,78240
+Detroit,Spillway,1561,84780
+Detroit,Spillway,1562,91560
+Detroit,Spillway,1563,98580
+Detroit,Spillway,1564,105840
+Detroit,Spillway,1565,113340
+Detroit,Spillway,1566,121080
+Detroit,Spillway,1567,129060
+Detroit,Spillway,1568,137280
+Detroit,Spillway,1569,145740
+Detroit,Spillway,1570,154440
+Detroit,Spillway,1571,163380
+Detroit,Spillway,1572,172560
+Detroit,Spillway,1573,181980
+Detroit,Spillway,1574,191640
+Detroit,Upper Controlled Outlet,1335,0
+Detroit,Upper Controlled Outlet,1420,6760
+Detroit,Upper Controlled Outlet,1422,6856
+Detroit,Upper Controlled Outlet,1424,6952
+Detroit,Upper Controlled Outlet,1426,7048
+Detroit,Upper Controlled Outlet,1428,7144
+Detroit,Upper Controlled Outlet,1430,7240
+Detroit,Upper Controlled Outlet,1432,7336
+Detroit,Upper Controlled Outlet,1434,7432
+Detroit,Upper Controlled Outlet,1436,7528
+Detroit,Upper Controlled Outlet,1438,7624
+Detroit,Upper Controlled Outlet,1440,7728
+Detroit,Upper Controlled Outlet,1442,7832
+Detroit,Upper Controlled Outlet,1444,7928
+Detroit,Upper Controlled Outlet,1446,8026
+Detroit,Upper Controlled Outlet,1448,8124
+Detroit,Upper Controlled Outlet,1450,8220
+Detroit,Upper Controlled Outlet,1452,8318
+Detroit,Upper Controlled Outlet,1454,8416
+Detroit,Upper Controlled Outlet,1456,8514
+Detroit,Upper Controlled Outlet,1458,8610
+Detroit,Upper Controlled Outlet,1460,8708
+Detroit,Upper Controlled Outlet,1462,8806
+Detroit,Upper Controlled Outlet,1464,8902
+Detroit,Upper Controlled Outlet,1466,9000
+Detroit,Upper Controlled Outlet,1468,9094
+Detroit,Upper Controlled Outlet,1470,9188
+Detroit,Upper Controlled Outlet,1472,9282
+Detroit,Upper Controlled Outlet,1474,9376
+Detroit,Upper Controlled Outlet,1476,9472
+Detroit,Upper Controlled Outlet,1478,9566
+Detroit,Upper Controlled Outlet,1480,9660
+Detroit,Upper Controlled Outlet,1482,9750
+Detroit,Upper Controlled Outlet,1484,9840
+Detroit,Upper Controlled Outlet,1486,9930
+Detroit,Upper Controlled Outlet,1488,10020
+Detroit,Upper Controlled Outlet,1490,10110
+Detroit,Upper Controlled Outlet,1492,10200
+Detroit,Upper Controlled Outlet,1494,10290
+Detroit,Upper Controlled Outlet,1496,10380
+Detroit,Upper Controlled Outlet,1498,10470
+Detroit,Upper Controlled Outlet,1500,10560
+Detroit,Upper Controlled Outlet,1502,10648
+Detroit,Upper Controlled Outlet,1504,10736
+Detroit,Upper Controlled Outlet,1506,10824
+Detroit,Upper Controlled Outlet,1508,10912
+Detroit,Upper Controlled Outlet,1510,11000
+Detroit,Upper Controlled Outlet,1512,11080
+Detroit,Upper Controlled Outlet,1514,11160
+Detroit,Upper Controlled Outlet,1516,11240
+Detroit,Upper Controlled Outlet,1518,11320
+Detroit,Upper Controlled Outlet,1520,11400
+Detroit,Upper Controlled Outlet,1522,11476
+Detroit,Upper Controlled Outlet,1524,11552
+Detroit,Upper Controlled Outlet,1526,11628
+Detroit,Upper Controlled Outlet,1528,11704
+Detroit,Upper Controlled Outlet,1530,11780
+Detroit,Upper Controlled Outlet,1532,11840
+Detroit,Upper Controlled Outlet,1534,11900
+Detroit,Upper Controlled Outlet,1536,11960
+Detroit,Upper Controlled Outlet,1538,12020
+Detroit,Upper Controlled Outlet,1540,12080
+Detroit,Upper Controlled Outlet,1542,12140
+Detroit,Upper Controlled Outlet,1544,12200
+Detroit,Upper Controlled Outlet,1546,12260
+Detroit,Upper Controlled Outlet,1548,12320
+Detroit,Upper Controlled Outlet,1550,12380
+Detroit,Lower Controlled Outlet,1345,5232
+Detroit,Lower Controlled Outlet,1347,5300
+Detroit,Lower Controlled Outlet,1349,5368
+Detroit,Lower Controlled Outlet,1351,5438
+Detroit,Lower Controlled Outlet,1353,5506
+Detroit,Lower Controlled Outlet,1355,5576
+Detroit,Lower Controlled Outlet,1357,5644
+Detroit,Lower Controlled Outlet,1359,5714
+Detroit,Lower Controlled Outlet,1361,5782
+Detroit,Lower Controlled Outlet,1363,5852
+Detroit,Lower Controlled Outlet,1365,5920
+Detroit,Lower Controlled Outlet,1367,5984
+Detroit,Lower Controlled Outlet,1369,6048
+Detroit,Lower Controlled Outlet,1371,6114
+Detroit,Lower Controlled Outlet,1373,6178
+Detroit,Lower Controlled Outlet,1375,6242
+Detroit,Lower Controlled Outlet,1377,6306
+Detroit,Lower Controlled Outlet,1379,6370
+Detroit,Lower Controlled Outlet,1381,6436
+Detroit,Lower Controlled Outlet,1383,6500
+Detroit,Lower Controlled Outlet,1385,6564
+Detroit,Lower Controlled Outlet,1387,6626
+Detroit,Lower Controlled Outlet,1389,6688
+Detroit,Lower Controlled Outlet,1391,6752
+Detroit,Lower Controlled Outlet,1393,6814
+Detroit,Lower Controlled Outlet,1395,6876
+Detroit,Lower Controlled Outlet,1397,6938
+Detroit,Lower Controlled Outlet,1399,7000
+Detroit,Lower Controlled Outlet,1401,7064
+Detroit,Lower Controlled Outlet,1403,7126
+Detroit,Lower Controlled Outlet,1405,7188
+Detroit,Lower Controlled Outlet,1407,7250
+Detroit,Lower Controlled Outlet,1409,7314
+Detroit,Lower Controlled Outlet,1411,7376
+Detroit,Lower Controlled Outlet,1413,7440
+Detroit,Lower Controlled Outlet,1415,7502
+Detroit,Lower Controlled Outlet,1417,7564
+Detroit,Lower Controlled Outlet,1419,7628
+Detroit,Lower Controlled Outlet,1421,7690
+Detroit,Lower Controlled Outlet,1423,7754
+Detroit,Lower Controlled Outlet,1425,7816
+Detroit,Lower Controlled Outlet,1427,7868
+Detroit,Lower Controlled Outlet,1429,7920
+Detroit,Lower Controlled Outlet,1431,7972
+Detroit,Lower Controlled Outlet,1433,8024
+Detroit,Lower Controlled Outlet,1435,8076
+Detroit,Lower Controlled Outlet,1437,8126
+Detroit,Lower Controlled Outlet,1439,8178
+Detroit,Lower Controlled Outlet,1441,8230
+Detroit,Lower Controlled Outlet,1443,8282
+Detroit,Lower Controlled Outlet,1445,8334
+Detroit,Lower Controlled Outlet,1447,8392
+Detroit,Lower Controlled Outlet,1449,8452
+Detroit,Lower Controlled Outlet,1451,8510
+Detroit,Lower Controlled Outlet,1453,8568
+Detroit,Lower Controlled Outlet,1455,8628
+Detroit,Lower Controlled Outlet,1457,8686
+Detroit,Lower Controlled Outlet,1459,8744
+Detroit,Lower Controlled Outlet,1461,8802
+Detroit,Lower Controlled Outlet,1463,8862
+Detroit,Lower Controlled Outlet,1465,8920
+Detroit,Power Plant,1424,0
+Detroit,Power Plant,1425,4360
+Detroit,Power Plant,1427,4360
+Detroit,Power Plant,1452,4960
+Detroit,Power Plant,1485,6200
+Detroit,Power Plant,1490,6300
+Detroit,Power Plant,1512,5720
+Detroit,Power Plant,1542,5180
+Detroit,Power Plant,1574,4840
+Detroit,Power Plant,1580,4840
+Foster,Spillway,597,0
+Foster,Spillway,598,1000
+Foster,Spillway,599,1900
+Foster,Spillway,600,3500
+Foster,Spillway,601,5000
+Foster,Spillway,602,6800
+Foster,Spillway,603,8800
+Foster,Spillway,604,10800
+Foster,Spillway,605,13000
+Foster,Spillway,606,15800
+Foster,Spillway,607,18200
+Foster,Spillway,608,21000
+Foster,Spillway,609,24000
+Foster,Spillway,610,27500
+Foster,Spillway,611,31000
+Foster,Spillway,612,34500
+Foster,Spillway,613,38000
+Foster,Spillway,614,42000
+Foster,Spillway,615,46200
+Foster,Spillway,616,50660
+Foster,Spillway,617,55120
+Foster,Spillway,618,59580
+Foster,Spillway,619,64040
+Foster,Spillway,620,68500
+Foster,Spillway,621,73800
+Foster,Spillway,622,79100
+Foster,Spillway,623,84400
+Foster,Spillway,624,89700
+Foster,Spillway,625,95000
+Foster,Spillway,626,101000
+Foster,Spillway,627,107000
+Foster,Spillway,628,113000
+Foster,Spillway,629,119000
+Foster,Spillway,630,125000
+Foster,Spillway,631,131560
+Foster,Spillway,632,138120
+Foster,Spillway,633,144680
+Foster,Spillway,634,151240
+Foster,Spillway,635,157800
+Foster,Spillway,636,164000
+Foster,Spillway,637,170200
+Foster,Spillway,638,176400
+Foster,Spillway,639,182600
+Foster,Spillway,640,188800
+Foster,Spillway,641,195000
+Foster,Spillway,646,205000
+Foster,Power Plant,525,0
+Foster,Power Plant,609,3100
+Foster,Power Plant,613,3080
+Foster,Power Plant,623,3060
+Foster,Power Plant,637,3020
+Foster,Power Plant,641,2940
+Foster,Power Plant,650,2940
+Green Peter,Controlled Outlet,745,0
+Green Peter,Controlled Outlet,760,1970
+Green Peter,Controlled Outlet,770,3542
+Green Peter,Controlled Outlet,780,4376
+Green Peter,Controlled Outlet,790,5074
+Green Peter,Controlled Outlet,800,5688
+Green Peter,Controlled Outlet,810,6242
+Green Peter,Controlled Outlet,820,6750
+Green Peter,Controlled Outlet,830,7222
+Green Peter,Controlled Outlet,840,7666
+Green Peter,Controlled Outlet,850,8086
+Green Peter,Controlled Outlet,860,8484
+Green Peter,Controlled Outlet,870,8864
+Green Peter,Controlled Outlet,880,9230
+Green Peter,Controlled Outlet,890,9580
+Green Peter,Controlled Outlet,900,9920
+Green Peter,Controlled Outlet,910,10246
+Green Peter,Controlled Outlet,920,10564
+Green Peter,Controlled Outlet,930,10872
+Green Peter,Controlled Outlet,940,11172
+Green Peter,Controlled Outlet,950,11464
+Green Peter,Controlled Outlet,960,11748
+Green Peter,Controlled Outlet,970,12026
+Green Peter,Controlled Outlet,980,12298
+Green Peter,Controlled Outlet,990,12564
+Green Peter,Controlled Outlet,1000,12824
+Green Peter,Controlled Outlet,1010,13078
+Green Peter,Controlled Outlet,1015,13204
+Green Peter,Spillway,969,0
+Green Peter,Spillway,970,200
+Green Peter,Spillway,971,800
+Green Peter,Spillway,972,1500
+Green Peter,Spillway,973,2200
+Green Peter,Spillway,974,3100
+Green Peter,Spillway,975,4250
+Green Peter,Spillway,976,5500
+Green Peter,Spillway,977,6900
+Green Peter,Spillway,978,8500
+Green Peter,Spillway,979,10000
+Green Peter,Spillway,980,11800
+Green Peter,Spillway,981,13680
+Green Peter,Spillway,982,15560
+Green Peter,Spillway,983,17440
+Green Peter,Spillway,984,19320
+Green Peter,Spillway,985,21200
+Green Peter,Spillway,986,23400
+Green Peter,Spillway,987,25600
+Green Peter,Spillway,988,27800
+Green Peter,Spillway,989,30000
+Green Peter,Spillway,990,32200
+Green Peter,Spillway,991,34760
+Green Peter,Spillway,992,37320
+Green Peter,Spillway,993,39880
+Green Peter,Spillway,994,42440
+Green Peter,Spillway,995,45000
+Green Peter,Spillway,996,47960
+Green Peter,Spillway,997,50920
+Green Peter,Spillway,998,53880
+Green Peter,Spillway,999,56840
+Green Peter,Spillway,1000,59800
+Green Peter,Spillway,1001,63040
+Green Peter,Spillway,1002,66280
+Green Peter,Spillway,1003,69520
+Green Peter,Spillway,1004,72760
+Green Peter,Spillway,1005,76000
+Green Peter,Spillway,1006,79360
+Green Peter,Spillway,1007,82720
+Green Peter,Spillway,1008,86080
+Green Peter,Spillway,1009,89440
+Green Peter,Spillway,1010,92800
+Green Peter,Spillway,1011,96240
+Green Peter,Spillway,1012,99680
+Green Peter,Spillway,1013,103120
+Green Peter,Spillway,1014,106560
+Green Peter,Spillway,1015,110000
+Green Peter,Power Plant,886,0
+Green Peter,Power Plant,887,4000
+Green Peter,Power Plant,902,4120
+Green Peter,Power Plant,920,4420
+Green Peter,Power Plant,940,4520
+Green Peter,Power Plant,968,4800
+Green Peter,Power Plant,1000,4320
+Green Peter,Power Plant,1015,4160
+Fern Ridge,Regulated Outlet,339,0
+Fern Ridge,Regulated Outlet,340,280
+Fern Ridge,Regulated Outlet,341,580
+Fern Ridge,Regulated Outlet,342,880
+Fern Ridge,Regulated Outlet,343,1180
+Fern Ridge,Regulated Outlet,344,1480
+Fern Ridge,Regulated Outlet,345,1800
+Fern Ridge,Regulated Outlet,346,2120
+Fern Ridge,Regulated Outlet,347,2460
+Fern Ridge,Regulated Outlet,348,2760
+Fern Ridge,Regulated Outlet,349,3080
+Fern Ridge,Regulated Outlet,350,3360
+Fern Ridge,Regulated Outlet,351,3660
+Fern Ridge,Regulated Outlet,352,3940
+Fern Ridge,Regulated Outlet,353,4240
+Fern Ridge,Regulated Outlet,354,4540
+Fern Ridge,Regulated Outlet,355,4860
+Fern Ridge,Regulated Outlet,356,5120
+Fern Ridge,Regulated Outlet,357,5420
+Fern Ridge,Regulated Outlet,358,5800
+Fern Ridge,Regulated Outlet,359,6020
+Fern Ridge,Regulated Outlet,360,6240
+Fern Ridge,Regulated Outlet,361,6460
+Fern Ridge,Regulated Outlet,362,6660
+Fern Ridge,Regulated Outlet,363,6860
+Fern Ridge,Regulated Outlet,364,7020
+Fern Ridge,Regulated Outlet,365,7200
+Fern Ridge,Regulated Outlet,366,7360
+Fern Ridge,Regulated Outlet,367,7520
+Fern Ridge,Regulated Outlet,368,7660
+Fern Ridge,Regulated Outlet,369,7780
+Fern Ridge,Regulated Outlet,370,7900
+Fern Ridge,Regulated Outlet,371,8020
+Fern Ridge,Regulated Outlet,372,8120
+Fern Ridge,Regulated Outlet,373,8220
+Fern Ridge,Regulated Outlet,373.5,8260
+Fern Ridge,Spillway,359,0
+Fern Ridge,Spillway,360,1200
+Fern Ridge,Spillway,361,2580
+Fern Ridge,Spillway,362,4200
+Fern Ridge,Spillway,363,6360
+Fern Ridge,Spillway,364,8700
+Fern Ridge,Spillway,365,11700
+Fern Ridge,Spillway,366,14700
+Fern Ridge,Spillway,367,18150
+Fern Ridge,Spillway,368,21600
+Fern Ridge,Spillway,369,25200
+Fern Ridge,Spillway,370,28860
+Fern Ridge,Spillway,371,32700
+Fern Ridge,Spillway,372,36720
+Fern Ridge,Spillway,373,40860
+Fern Ridge,Spillway,374,45180
+Fern Ridge,Spillway,375,49620
+Fern Ridge,Spillway,376,54180
+Fern Ridge,Spillway,377,58920
+Fern Ridge,Spillway,378,63720
+Fern Ridge,Spillway,379,68700
+Fern Ridge,Spillway,380,73800
+Fern Ridge,SluiceGate,341.5,0
+Fern Ridge,SluiceGate,342,4
+Fern Ridge,SluiceGate,343,11
+Fern Ridge,SluiceGate,344,21
+Fern Ridge,SluiceGate,345,35
+Fern Ridge,SluiceGate,346,50
+Fern Ridge,SluiceGate,347,68
+Fern Ridge,SluiceGate,348,87
+Fern Ridge,SluiceGate,349,99
+Fern Ridge,SluiceGate,350,109
+Fern Ridge,SluiceGate,351,119
+Fern Ridge,SluiceGate,352,128
+Fern Ridge,SluiceGate,353,136
+Fern Ridge,SluiceGate,354,144
+Fern Ridge,SluiceGate,355,151
+Fern Ridge,SluiceGate,356,158
+Fern Ridge,SluiceGate,357,166
+Fern Ridge,SluiceGate,358,172
+Fern Ridge,SluiceGate,359,178
+Fern Ridge,SluiceGate,360,184
+Fern Ridge,SluiceGate,361,190
+Fern Ridge,SluiceGate,362,195
+Fern Ridge,SluiceGate,363,201
+Fern Ridge,SluiceGate,364,206
+Fern Ridge,SluiceGate,365,212
+Fern Ridge,SluiceGate,366,217
+Fern Ridge,SluiceGate,367,222
+Fern Ridge,SluiceGate,368,227
+Fern Ridge,SluiceGate,369,232
+Fern Ridge,SluiceGate,370,237
+Fern Ridge,SluiceGate,371,242
+Fern Ridge,SluiceGate,372,247
+Fern Ridge,SluiceGate,373,252
+Fern Ridge,SluiceGate,373.5,254
+Fern Ridge,SluiceGate,382,296
+Blue River,Spillway,1321,0
+Blue River,Spillway,1322,300
+Blue River,Spillway,1323,750
+Blue River,Spillway,1324,1200
+Blue River,Spillway,1325,1800
+Blue River,Spillway,1326,2400
+Blue River,Spillway,1327,3200
+Blue River,Spillway,1328,4000
+Blue River,Spillway,1329,5000
+Blue River,Spillway,1330,6000
+Blue River,Spillway,1331,7200
+Blue River,Spillway,1332,8400
+Blue River,Spillway,1333,9600
+Blue River,Spillway,1334,10800
+Blue River,Spillway,1335,12000
+Blue River,Spillway,1336,13480
+Blue River,Spillway,1337,14960
+Blue River,Spillway,1338,16440
+Blue River,Spillway,1339,17920
+Blue River,Spillway,1340,19400
+Blue River,Spillway,1341,21120
+Blue River,Spillway,1342,22840
+Blue River,Spillway,1343,24560
+Blue River,Spillway,1344,26280
+Blue River,Spillway,1345,28000
+Blue River,Spillway,1346,29920
+Blue River,Spillway,1347,31840
+Blue River,Spillway,1348,33760
+Blue River,Spillway,1349,35680
+Blue River,Spillway,1350,37600
+Blue River,Spillway,1351,39800
+Blue River,Spillway,1352,42000
+Blue River,Spillway,1353,44200
+Blue River,Spillway,1354,46400
+Blue River,Spillway,1355,48600
+Blue River,Spillway,1356,51000
+Blue River,Spillway,1357,53220
+Blue River,Regulating Outlet,1132,0
+Blue River,Regulating Outlet,1150,3800
+Blue River,Regulating Outlet,1160,5400
+Blue River,Regulating Outlet,1170,6480
+Blue River,Regulating Outlet,1180,7420
+Blue River,Regulating Outlet,1190,8240
+Blue River,Regulating Outlet,1200,8960
+Blue River,Regulating Outlet,1210,9660
+Blue River,Regulating Outlet,1220,10320
+Blue River,Regulating Outlet,1230,10920
+Blue River,Regulating Outlet,1240,11500
+Blue River,Regulating Outlet,1250,12040
+Blue River,Regulating Outlet,1260,12560
+Blue River,Regulating Outlet,1270,13040
+Blue River,Regulating Outlet,1280,13520
+Blue River,Regulating Outlet,1290,14000
+Blue River,Regulating Outlet,1300,14440
+Blue River,Regulating Outlet,1310,14880
+Blue River,Regulating Outlet,1320,15300
+Blue River,Regulating Outlet,1330,15720
+Blue River,Regulating Outlet,1340,16120
+Blue River,Regulating Outlet,1350,16540
+Blue River,Regulating Outlet,1357,16800
+Cougar,Spillway,1657,0
+Cougar,Spillway,1658,575
+Cougar,Spillway,1659,1000
+Cougar,Spillway,1660,1500
+Cougar,Spillway,1661,2400
+Cougar,Spillway,1662,3300
+Cougar,Spillway,1663,4200
+Cougar,Spillway,1664,5100
+Cougar,Spillway,1665,6000
+Cougar,Spillway,1666,7100
+Cougar,Spillway,1667,8200
+Cougar,Spillway,1668,9300
+Cougar,Spillway,1669,10400
+Cougar,Spillway,1670,11500
+Cougar,Spillway,1671,13100
+Cougar,Spillway,1672,14700
+Cougar,Spillway,1673,16300
+Cougar,Spillway,1674,17900
+Cougar,Spillway,1675,19500
+Cougar,Spillway,1676,21500
+Cougar,Spillway,1677,23500
+Cougar,Spillway,1678,25500
+Cougar,Spillway,1679,27500
+Cougar,Spillway,1680,29500
+Cougar,Spillway,1681,31700
+Cougar,Spillway,1682,33900
+Cougar,Spillway,1683,36100
+Cougar,Spillway,1684,38300
+Cougar,Spillway,1685,40500
+Cougar,Spillway,1686,43000
+Cougar,Spillway,1687,45500
+Cougar,Spillway,1688,48000
+Cougar,Spillway,1689,50500
+Cougar,Spillway,1690,53000
+Cougar,Spillway,1691,55600
+Cougar,Spillway,1692,58200
+Cougar,Spillway,1693,60800
+Cougar,Spillway,1694,63400
+Cougar,Spillway,1695,66000
+Cougar,Spillway,1696,68535
+Cougar,Spillway,1697,71070
+Cougar,Spillway,1698,73605
+Cougar,Spillway,1699,76140
+Cougar,Regulating Outlet,1479,0
+Cougar,Regulating Outlet,1510,4280
+Cougar,Regulating Outlet,1520,5150
+Cougar,Regulating Outlet,1530,5800
+Cougar,Regulating Outlet,1540,6350
+Cougar,Regulating Outlet,1550,6870
+Cougar,Regulating Outlet,1560,7350
+Cougar,Regulating Outlet,1570,7780
+Cougar,Regulating Outlet,1580,8200
+Cougar,Regulating Outlet,1590,8590
+Cougar,Regulating Outlet,1600,8970
+Cougar,Regulating Outlet,1610,9340
+Cougar,Regulating Outlet,1620,9670
+Cougar,Regulating Outlet,1630,10000
+Cougar,Regulating Outlet,1640,10320
+Cougar,Regulating Outlet,1650,10610
+Cougar,Regulating Outlet,1660,10910
+Cougar,Regulating Outlet,1670,11210
+Cougar,Regulating Outlet,1680,11500
+Cougar,Regulating Outlet,1690,11790
+Cougar,Regulating Outlet,1699,12050
+Cougar,Power Plant,1479,0
+Cougar,Power Plant,1480,830
+Cougar,Power Plant,1516,1040
+Cougar,Power Plant,1530,1100
+Cougar,Power Plant,1550,1180
+Cougar,Power Plant,1570,1240
+Cougar,Power Plant,1579,1290
+Cougar,Power Plant,1610,1120
+Cougar,Power Plant,1630,1050
+Cougar,Power Plant,1650,996
+Cougar,Power Plant,1670,950
+Cougar,Power Plant,1690,908
+Cougar,Power Plant,1700,890
+Cougar,Diversion Tunnel,1300,973
+Cougar,Diversion Tunnel,1310,1132
+Cougar,Diversion Tunnel,1320,1271
+Cougar,Diversion Tunnel,1330,1397
+Cougar,Diversion Tunnel,1340,1512
+Cougar,Diversion Tunnel,1350,1619
+Cougar,Diversion Tunnel,1360,1719
+Cougar,Diversion Tunnel,1370,1813
+Cougar,Diversion Tunnel,1375,1860
+Cougar,Diversion Tunnel,1380,1904
+Cougar,Diversion Tunnel,1390,1989
+Cougar,Diversion Tunnel,1400,2072
+Cougar,Diversion Tunnel,1410,2151
+Cougar,Diversion Tunnel,1420,2227
+Cougar,Diversion Tunnel,1430,2302
+Cougar,Diversion Tunnel,1440,2374
+Cougar,Diversion Tunnel,1450,2442
+Cougar,Diversion Tunnel,1460,2510
+Cougar,Diversion Tunnel,1470,2576
+Cougar,Diversion Tunnel,1480,2640
+Cougar,Diversion Tunnel,1490,2703
+Cougar,Diversion Tunnel,1500,2764
+Cougar,Diversion Tunnel,1510,2824
+Cougar,Diversion Tunnel,1520,2882
+Cougar,Diversion Tunnel,1530,2940
+Cougar,Diversion Tunnel,1540,2997
+Cougar,Diversion Tunnel,1550,3000
+Cougar,Diversion Tunnel,1699,3000
+Dorena,Regulated Outlet,739,0
+Dorena,Regulated Outlet,801,7610
+Dorena,Regulated Outlet,802,7665
+Dorena,Regulated Outlet,803,7720
+Dorena,Regulated Outlet,804,7775
+Dorena,Regulated Outlet,805,7830
+Dorena,Regulated Outlet,806,7885
+Dorena,Regulated Outlet,807,7935
+Dorena,Regulated Outlet,808,7990
+Dorena,Regulated Outlet,809,8040
+Dorena,Regulated Outlet,810,8090
+Dorena,Regulated Outlet,811,8140
+Dorena,Regulated Outlet,812,8190
+Dorena,Regulated Outlet,813,8240
+Dorena,Regulated Outlet,814,8290
+Dorena,Regulated Outlet,815,8340
+Dorena,Regulated Outlet,816,8390
+Dorena,Regulated Outlet,817,8440
+Dorena,Regulated Outlet,818,8490
+Dorena,Regulated Outlet,819,8535
+Dorena,Regulated Outlet,820,8580
+Dorena,Regulated Outlet,821,8640
+Dorena,Regulated Outlet,822,8680
+Dorena,Regulated Outlet,823,8725
+Dorena,Regulated Outlet,824,8770
+Dorena,Regulated Outlet,825,8820
+Dorena,Regulated Outlet,826,8865
+Dorena,Regulated Outlet,827,8925
+Dorena,Regulated Outlet,828,8960
+Dorena,Regulated Outlet,829,9005
+Dorena,Regulated Outlet,830,9050
+Dorena,Regulated Outlet,831,9095
+Dorena,Regulated Outlet,832,9140
+Dorena,Regulated Outlet,833,9185
+Dorena,Regulated Outlet,834,9230
+Dorena,Regulated Outlet,835,9275
+Dorena,Regulated Outlet,836,9320
+Dorena,Regulated Outlet,837,9365
+Dorena,Regulated Outlet,838,9410
+Dorena,Regulated Outlet,839,9455
+Dorena,Regulated Outlet,840,9500
+Dorena,Uncontrolled Outlet,835,0
+Dorena,Uncontrolled Outlet,836,850
+Dorena,Uncontrolled Outlet,837,1700
+Dorena,Uncontrolled Outlet,838,3362.5
+Dorena,Uncontrolled Outlet,839,5025
+Dorena,Uncontrolled Outlet,840,7262.5
+Dorena,Uncontrolled Outlet,841,9500
+Dorena,Uncontrolled Outlet,842,12287.5
+Dorena,Uncontrolled Outlet,843,15075
+Dorena,Uncontrolled Outlet,844,18375
+Dorena,Uncontrolled Outlet,845,21675
+Dorena,Uncontrolled Outlet,846,25437.5
+Dorena,Uncontrolled Outlet,847,29200
+Dorena,Uncontrolled Outlet,848,33412.5
+Dorena,Uncontrolled Outlet,849,37625
+Dorena,Uncontrolled Outlet,850,42275
+Dorena,Uncontrolled Outlet,851,46925
+Dorena,Uncontrolled Outlet,852,51962.5
+Dorena,Uncontrolled Outlet,853,57000
+Dorena,Uncontrolled Outlet,854,62387.5
+Dorena,Uncontrolled Outlet,855,67775
+Dorena,Uncontrolled Outlet,856,73500
+Dorena,Uncontrolled Outlet,857,79225
+Dorena,Uncontrolled Outlet,858,85250
+Dorena,Uncontrolled Outlet,859,91275
+Dorena,Uncontrolled Outlet,860,97500
+Cottage Grove,Regulated Outlet,719,0
+Cottage Grove,Regulated Outlet,720,48
+Cottage Grove,Regulated Outlet,721,48
+Cottage Grove,Regulated Outlet,722,48
+Cottage Grove,Regulated Outlet,723,48
+Cottage Grove,Regulated Outlet,724,48
+Cottage Grove,Regulated Outlet,725,447
+Cottage Grove,Regulated Outlet,726,546
+Cottage Grove,Regulated Outlet,727,642
+Cottage Grove,Regulated Outlet,728,834
+Cottage Grove,Regulated Outlet,729,924
+Cottage Grove,Regulated Outlet,730,1068
+Cottage Grove,Regulated Outlet,731,1176
+Cottage Grove,Regulated Outlet,732,1278
+Cottage Grove,Regulated Outlet,733,1377
+Cottage Grove,Regulated Outlet,734,1470
+Cottage Grove,Regulated Outlet,735,1557
+Cottage Grove,Regulated Outlet,736,1641
+Cottage Grove,Regulated Outlet,737,1719
+Cottage Grove,Regulated Outlet,738,1791
+Cottage Grove,Regulated Outlet,739,1860
+Cottage Grove,Regulated Outlet,740,1926
+Cottage Grove,Regulated Outlet,741,1986
+Cottage Grove,Regulated Outlet,742,2040
+Cottage Grove,Regulated Outlet,743,2091
+Cottage Grove,Regulated Outlet,744,2142
+Cottage Grove,Regulated Outlet,745,2193
+Cottage Grove,Regulated Outlet,746,2241
+Cottage Grove,Regulated Outlet,747,2292
+Cottage Grove,Regulated Outlet,748,2340
+Cottage Grove,Regulated Outlet,749,2385
+Cottage Grove,Regulated Outlet,750,2430
+Cottage Grove,Regulated Outlet,751,2475
+Cottage Grove,Regulated Outlet,752,2520
+Cottage Grove,Regulated Outlet,753,2565
+Cottage Grove,Regulated Outlet,754,2610
+Cottage Grove,Regulated Outlet,755,2649
+Cottage Grove,Regulated Outlet,756,2688
+Cottage Grove,Regulated Outlet,757,2727
+Cottage Grove,Regulated Outlet,758,2766
+Cottage Grove,Regulated Outlet,759,2805
+Cottage Grove,Regulated Outlet,760,2844
+Cottage Grove,Regulated Outlet,761,2883
+Cottage Grove,Regulated Outlet,762,2922
+Cottage Grove,Regulated Outlet,763,2961
+Cottage Grove,Regulated Outlet,764,2997
+Cottage Grove,Regulated Outlet,765,3033
+Cottage Grove,Regulated Outlet,766,3069
+Cottage Grove,Regulated Outlet,767,3102
+Cottage Grove,Regulated Outlet,768,3138
+Cottage Grove,Regulated Outlet,769,3174
+Cottage Grove,Regulated Outlet,770,3210
+Cottage Grove,Regulated Outlet,771,3243
+Cottage Grove,Regulated Outlet,772,3276
+Cottage Grove,Regulated Outlet,773,3309
+Cottage Grove,Regulated Outlet,774,3342
+Cottage Grove,Regulated Outlet,775,3375
+Cottage Grove,Regulated Outlet,776,3408
+Cottage Grove,Regulated Outlet,777,3438
+Cottage Grove,Regulated Outlet,778,3468
+Cottage Grove,Regulated Outlet,779,3501
+Cottage Grove,Regulated Outlet,780,3531
+Cottage Grove,Regulated Outlet,781,3561
+Cottage Grove,Regulated Outlet,782,3594
+Cottage Grove,Regulated Outlet,783,3627
+Cottage Grove,Regulated Outlet,784,3657
+Cottage Grove,Regulated Outlet,785,3687
+Cottage Grove,Regulated Outlet,786,3690
+Cottage Grove,Regulated Outlet,787,3744
+Cottage Grove,Regulated Outlet,788,3774
+Cottage Grove,Regulated Outlet,789,3801
+Cottage Grove,Regulated Outlet,790,3831
+Cottage Grove,Regulated Outlet,791,3861
+Cottage Grove,Regulated Outlet,792,3888
+Cottage Grove,Regulated Outlet,793,3921
+Cottage Grove,Regulated Outlet,794,3948
+Cottage Grove,Regulated Outlet,795,3975
+Cottage Grove,Uncontrolled Outlet,791,0
+Cottage Grove,Uncontrolled Outlet,792,1190
+Cottage Grove,Uncontrolled Outlet,793,2380
+Cottage Grove,Uncontrolled Outlet,794,4790
+Cottage Grove,Uncontrolled Outlet,795,7200
+Cottage Grove,Uncontrolled Outlet,796,10600
+Cottage Grove,Uncontrolled Outlet,797,14000
+Cottage Grove,Uncontrolled Outlet,798,18250
+Cottage Grove,Uncontrolled Outlet,799,22500
+Cottage Grove,Uncontrolled Outlet,800,27450
+Cottage Grove,Uncontrolled Outlet,801,32400
+Cottage Grove,Uncontrolled Outlet,802,37650
+Cottage Grove,Uncontrolled Outlet,802.6,40800
+Cottage Grove,Uncontrolled Outlet,804,48700
+Cottage Grove,Uncontrolled Outlet,805,54300
+Cottage Grove,Uncontrolled Outlet,806,60350
+Cottage Grove,Uncontrolled Outlet,807,66400
+Cottage Grove,Uncontrolled Outlet,808,72700
+Cottage Grove,Uncontrolled Outlet,808,72700
+Fall Creek,Regulated Outlet,670,0
+Fall Creek,Regulated Outlet,675,350
+Fall Creek,Regulated Outlet,680,930
+Fall Creek,Regulated Outlet,685,1810
+Fall Creek,Regulated Outlet,690,2608
+Fall Creek,Regulated Outlet,695,3086
+Fall Creek,Regulated Outlet,700,3458
+Fall Creek,Regulated Outlet,705,3768
+Fall Creek,Regulated Outlet,710,4040
+Fall Creek,Regulated Outlet,720,4480
+Fall Creek,Regulated Outlet,730,4880
+Fall Creek,Regulated Outlet,740,5240
+Fall Creek,Regulated Outlet,750,5560
+Fall Creek,Regulated Outlet,760,5880
+Fall Creek,Regulated Outlet,770,6180
+Fall Creek,Regulated Outlet,780,6460
+Fall Creek,Regulated Outlet,790,6720
+Fall Creek,Regulated Outlet,800,7000
+Fall Creek,Regulated Outlet,810,7240
+Fall Creek,Regulated Outlet,820,7480
+Fall Creek,Regulated Outlet,830,7720
+Fall Creek,Regulated Outlet,834,7820
+Fall Creek,Spillway,791.6,0
+Fall Creek,Spillway,792,400
+Fall Creek,Spillway,793,800
+Fall Creek,Spillway,794,1000
+Fall Creek,Spillway,795,1750
+Fall Creek,Spillway,796,2500
+Fall Creek,Spillway,797,3250
+Fall Creek,Spillway,798,4000
+Fall Creek,Spillway,799,5000
+Fall Creek,Spillway,800,6000
+Fall Creek,Spillway,801,7000
+Fall Creek,Spillway,802,8000
+Fall Creek,Spillway,803,9500
+Fall Creek,Spillway,804,11000
+Fall Creek,Spillway,805,12500
+Fall Creek,Spillway,806,14000
+Fall Creek,Spillway,807,15750
+Fall Creek,Spillway,808,17500
+Fall Creek,Spillway,809,19250
+Fall Creek,Spillway,810,21000
+Fall Creek,Spillway,811,23000
+Fall Creek,Spillway,812,25000
+Fall Creek,Spillway,813,27000
+Fall Creek,Spillway,814,29000
+Fall Creek,Spillway,815,31125
+Fall Creek,Spillway,816,33250
+Fall Creek,Spillway,817,35375
+Fall Creek,Spillway,818,37500
+Fall Creek,Spillway,819,40125
+Fall Creek,Spillway,820,42750
+Fall Creek,Spillway,821,45375
+Fall Creek,Spillway,822,48000
+Fall Creek,Spillway,823,50500
+Fall Creek,Spillway,824,53000
+Fall Creek,Spillway,825,55500
+Fall Creek,Spillway,826,58000
+Fall Creek,Spillway,827,61000
+Fall Creek,Spillway,828,64000
+Fall Creek,Spillway,829,67000
+Fall Creek,Spillway,830,70000
+Fall Creek,Spillway,831,73125
+Fall Creek,Spillway,832,76250
+Fall Creek,Spillway,833,79375
+Fall Creek,Spillway,834,82400
+Lookout Point,Spillway,888,0
+Lookout Point,Spillway,889,1610
+Lookout Point,Spillway,890,3010
+Lookout Point,Spillway,891,4710
+Lookout Point,Spillway,892,6695
+Lookout Point,Spillway,893,8950
+Lookout Point,Spillway,894,11475
+Lookout Point,Spillway,895,14250
+Lookout Point,Spillway,896,17270
+Lookout Point,Spillway,897,20520
+Lookout Point,Spillway,898,24000
+Lookout Point,Spillway,899,27695
+Lookout Point,Spillway,900,31605
+Lookout Point,Spillway,901,35710
+Lookout Point,Spillway,902,40015
+Lookout Point,Spillway,903,44510
+Lookout Point,Spillway,904,49185
+Lookout Point,Spillway,905,54040
+Lookout Point,Spillway,906,59070
+Lookout Point,Spillway,907,64265
+Lookout Point,Spillway,908,69630
+Lookout Point,Spillway,909,75160
+Lookout Point,Spillway,910,80850
+Lookout Point,Spillway,911,86695
+Lookout Point,Spillway,912,92700
+Lookout Point,Spillway,913,98865
+Lookout Point,Spillway,914,105185
+Lookout Point,Spillway,915,111660
+Lookout Point,Spillway,916,118300
+Lookout Point,Spillway,917,125095
+Lookout Point,Spillway,918,132055
+Lookout Point,Spillway,919,139175
+Lookout Point,Spillway,920,146470
+Lookout Point,Spillway,921,153940
+Lookout Point,Spillway,922,161585
+Lookout Point,Spillway,923,169415
+Lookout Point,Spillway,924,177430
+Lookout Point,Spillway,925,185650
+Lookout Point,Spillway,926,194070
+Lookout Point,Spillway,927,202700
+Lookout Point,Spillway,928,211555
+Lookout Point,Spillway,929,220640
+Lookout Point,Spillway,930,229965
+Lookout Point,Spillway,931,239545
+Lookout Point,Spillway,932,249385
+Lookout Point,Spillway,933,259500
+Lookout Point,Spillway,934,270000
+Lookout Point,Regulated Outlet,724,0
+Lookout Point,Regulated Outlet,740,2808
+Lookout Point,Regulated Outlet,750,6192
+Lookout Point,Regulated Outlet,760,8280
+Lookout Point,Regulated Outlet,770,9864
+Lookout Point,Regulated Outlet,780,11368
+Lookout Point,Regulated Outlet,790,12632
+Lookout Point,Regulated Outlet,800,13784
+Lookout Point,Regulated Outlet,810,14844
+Lookout Point,Regulated Outlet,820,15832
+Lookout Point,Regulated Outlet,830,16764
+Lookout Point,Regulated Outlet,840,17644
+Lookout Point,Regulated Outlet,850,18680
+Lookout Point,Regulated Outlet,860,19288
+Lookout Point,Regulated Outlet,870,20060
+Lookout Point,Regulated Outlet,880,20800
+Lookout Point,Regulated Outlet,890,21520
+Lookout Point,Regulated Outlet,900,22212
+Lookout Point,Regulated Outlet,910,22884
+Lookout Point,Regulated Outlet,920,24020
+Lookout Point,Regulated Outlet,930,24176
+Lookout Point,Regulated Outlet,934,24424
+Lookout Point,Power Plant,818,0
+Lookout Point,Power Plant,819,7650
+Lookout Point,Power Plant,840,8550
+Lookout Point,Power Plant,860,9600
+Lookout Point,Power Plant,886,9495
+Lookout Point,Power Plant,915,8220
+Lookout Point,Power Plant,934,7635
+Lookout Point,Power Plant,940,7635
+Dexter,Spillway,637,6999993
+Dexter,Spillway,645,6999993
+Dexter,Spillway,655,6999993
+Dexter,Spillway,665,6999993
+Dexter,Spillway,675,6999993
+Dexter,Spillway,685,6999993
+Dexter,Spillway,690,6999993
+Dexter,Spillway,695,6999993
+Dexter,Spillway,700,6999993
+Dexter,Power Plant,634,4000
+Dexter,Power Plant,690.3,4000
+Dexter,Power Plant,694,4040
+Dexter,Power Plant,697.4,3870
+Dexter,Power Plant,700,3870
+Hills Creek,Spillway,1495.5,0
+Hills Creek,Spillway,1497,600
+Hills Creek,Spillway,1498,1599.99
+Hills Creek,Spillway,1499,2600.01
+Hills Creek,Spillway,1500,3600
+Hills Creek,Spillway,1501,5040
+Hills Creek,Spillway,1502,6480
+Hills Creek,Spillway,1503,7920
+Hills Creek,Spillway,1504,9360
+Hills Creek,Spillway,1505,10800
+Hills Creek,Spillway,1506,12960
+Hills Creek,Spillway,1507,15120
+Hills Creek,Spillway,1508,17280
+Hills Creek,Spillway,1509,19440
+Hills Creek,Spillway,1510,21600
+Hills Creek,Spillway,1511,24120
+Hills Creek,Spillway,1512,26640
+Hills Creek,Spillway,1513,29160
+Hills Creek,Spillway,1514,31680
+Hills Creek,Spillway,1515,34200
+Hills Creek,Spillway,1516,37080
+Hills Creek,Spillway,1517,39960
+Hills Creek,Spillway,1518,42840
+Hills Creek,Spillway,1519,45720
+Hills Creek,Spillway,1520,48600
+Hills Creek,Spillway,1521,51840
+Hills Creek,Spillway,1522,55080
+Hills Creek,Spillway,1523,58320
+Hills Creek,Spillway,1524,61560
+Hills Creek,Spillway,1525,64800
+Hills Creek,Spillway,1526,68520
+Hills Creek,Spillway,1527,72240
+Hills Creek,Spillway,1528,75960
+Hills Creek,Spillway,1529,79680
+Hills Creek,Spillway,1530,83400
+Hills Creek,Spillway,1531,87240
+Hills Creek,Spillway,1532,91080
+Hills Creek,Spillway,1533,94920
+Hills Creek,Spillway,1534,98760
+Hills Creek,Spillway,1535,102600
+Hills Creek,Spillway,1536,107280
+Hills Creek,Spillway,1537,111960
+Hills Creek,Spillway,1538,116640
+Hills Creek,Spillway,1539,121320
+Hills Creek,Spillway,1540,126000
+Hills Creek,Spillway,1541,131000.01
+Hills Creek,Spillway,1542,135999.99
+Hills Creek,Spillway,1543,141000
+Hills Creek,Regulated Outlet,1409,0
+Hills Creek,Regulated Outlet,1410,70
+Hills Creek,Regulated Outlet,1420,1100
+Hills Creek,Regulated Outlet,1430,3100
+Hills Creek,Regulated Outlet,1440,4760
+Hills Creek,Regulated Outlet,1450,5770
+Hills Creek,Regulated Outlet,1460,6490
+Hills Creek,Regulated Outlet,1470,7120
+Hills Creek,Regulated Outlet,1480,7750
+Hills Creek,Regulated Outlet,1490,8290
+Hills Creek,Regulated Outlet,1500,8830
+Hills Creek,Regulated Outlet,1510,9316
+Hills Creek,Regulated Outlet,1520,9800
+Hills Creek,Regulated Outlet,1530,10230
+Hills Creek,Regulated Outlet,1540,10660
+Hills Creek,Regulated Outlet,1543,10760
+Hills Creek,Power Plant,1413,0
+Hills Creek,Power Plant,1414,1360
+Hills Creek,Power Plant,1443,1960
+Hills Creek,Power Plant,1480,1820
+Hills Creek,Power Plant,1543,1480
