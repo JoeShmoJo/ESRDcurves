@@ -9,7 +9,9 @@ from cot_composite import SOURCE, read_recession_hours, run_legacy
 
 import matplotlib.patheffects as effects
 import matplotlib.pyplot as plt
+from matplotlib.patches import Rectangle
 from matplotlib.ticker import MultipleLocator
+from matplotlib.transforms import Bbox
 import numpy as np
 
 
@@ -203,10 +205,10 @@ def add_example(ax, lines, inflow, code):
     ax.scatter([release], [elevation], s=23, color=EXAMPLE, edgecolor="white",
                linewidth=0.6, zorder=6)
     measurement = f"{float(level) * 1000:,.0f} cfs inflow" if inflow else f"{level} ft/hr pool rise"
-    return f"{elevation:g} ft with {measurement} → about {round(release * 10) * 100:,} cfs"
+    return f"{elevation:g} ft with {measurement} → {round(release * 10) * 100:,} cfs release"
 
 
-def add_title_block(fig, full, inflow, code, *, landscape):
+def add_title_block(fig, full, inflow, code, title, *, landscape):
     """Set the source title-block text beside the interpretation notes."""
     source = full["dfTitleBlock"]
     lines = [" ".join(str(value).split()) for value in source.Text]
@@ -245,40 +247,75 @@ def add_title_block(fig, full, inflow, code, *, landscape):
             "Maximum-discharge curves show design capacity. Project limits may apply to gate openings and concurrent outlet use.",
             "Use the averaging period specified in the project's water control manual.",
         ]
-    x_left = 0.075 if landscape else 0.125
-    headings_y = 0.158 if landscape else 0.164
-    fig.add_artist(plt.Line2D([x_left, 0.95], [headings_y + 0.024] * 2,
-                             transform=fig.transFigure, color="#a6b6c0", lw=0.8))
-    for x, heading, body in (
-        (x_left, "TITLE BLOCK", "\n".join(lines)),
-        (0.51, heading, "\n".join(fill(note, width=76 if landscape else 58) for note in notes)),
-    ):
-        fig.text(x, headings_y, heading, color=INK, fontsize=8.5, weight="bold")
-        fig.text(x, headings_y - 0.015, body, color=INK, fontsize=8, va="top", linespacing=1.2)
+    left = 0.075 if landscape else 0.125
+    width = 0.27 if landscape else 0.32
+    bottom, top = 0.027, 0.182
+    fig.add_artist(Rectangle((left, bottom), width, top - bottom,
+                             transform=fig.transFigure, facecolor="white",
+                             edgecolor=INK, linewidth=1.15))
+    center = left + width / 2
+    fig.text(center, top - 0.014, title, color=INK, fontsize=9.3,
+             weight="bold", ha="center", va="top")
+    fig.text(center, top - 0.036, "\n".join(lines), color=INK, fontsize=8,
+             ha="center", va="top", linespacing=1.16)
+
+    notes_left = left + width + 0.035
+    fig.text(notes_left, top - 0.014, heading.capitalize(), color=INK,
+             fontsize=9, weight="bold", va="top")
+    body = "\n".join(fill(note, width=88 if landscape else 60,
+                          subsequent_indent="   " if note[:1].isdigit() else "")
+                     for note in notes)
+    fig.text(notes_left, top - 0.036, body, color=INK,
+             fontsize=8.3, va="top", linespacing=1.22)
+
+
+def make_inset(fig, main, lines):
+    """Place the zoom only where its panel and tick labels clear the plotted data."""
+    fig.canvas.draw()
+    paths = [line.get_path().transformed(main.transData + main.transAxes.inverted())
+             for line in lines]
+    sizes = ((0.49, 0.42), (0.46, 0.39), (0.43, 0.35))
+    placements = [(width, height, x, y)
+                  for width, height in sizes
+                  for x in (0.97 - width, 0.91 - width, 0.08)
+                  for y in (0.11, 0.18, 0.55)]
+    placements.extend((width, height, x, y)
+                      for width, height in (*sizes, (0.43, 0.32), (0.40, 0.31))
+                      for x in (0.97 - width, 0.91 - width, 0.08)
+                      for y in (0.075, 0.11, 0.18, 0.55))
+    for width, height, x, y in placements:
+        padded = Bbox.from_extents(x - 0.043, y - 0.057,
+                                   x + width + 0.006, y + height + 0.045)
+        if not any(path.intersects_bbox(padded, filled=False) for path in paths):
+            return main.inset_axes([x, y, width, height]), True
+
+    # Keep the zoom legible beside the main panel when an inset would cover data.
+    main.set_position([0.075, 0.289, 0.51, 0.56])
+    return fig.add_axes([0.635, 0.40, 0.315, 0.39]), False
 
 
 def write_sheet(full, detail, inflow, output, code="COT", title="Cottage Grove Reservoir",
                 formats=("pdf", "png"), inset=False):
     if inset:
         fig, main = plt.subplots(figsize=(13, 9))
-        fig.subplots_adjust(left=0.075, right=0.95, top=0.825, bottom=0.289)
-        zoom = main.inset_axes([0.48, 0.115, 0.49, 0.42])
+        fig.subplots_adjust(left=0.075, right=0.95, top=0.859, bottom=0.289)
     else:
         fig, (main, zoom) = plt.subplots(2, 1, figsize=(8.5, 11))
-        fig.subplots_adjust(left=0.125, right=0.95, top=0.825, bottom=0.278, hspace=0.36)
+        fig.subplots_adjust(left=0.125, right=0.95, top=0.859, bottom=0.278, hspace=0.36)
     left = 0.075 if inset else 0.125
     fig.text(left, 0.96, title, fontsize=21, color=INK, weight="bold")
     heading = "Inflow" if inflow else "Rate of rise"
-    units = "inflow in 1,000 cfs" if inflow else "pool rise in ft/hr"
-    fig.text(left, 0.923, f"{heading} · Emergency Spillway Release Diagram",
+    units = "1,000 cfs" if inflow else "ft/hr"
+    fig.text(left, 0.923, f"{heading} ({units}) · Emergency Spillway Release Diagram",
              fontsize=12, color=INK)
-    fig.text(left, 0.890, f"Curve labels show {units}. From pool elevation, trace across to",
-             fontsize=9.5, color=INK)
-    fig.text(left, 0.872, "the matching curve, then down to read reservoir release.",
-             fontsize=9.5, color=INK)
 
     full_lines, bounds = plot_panel(main, full, inflow, detail=False, code=code)
+    embedded = False
+    if inset:
+        zoom, embedded = make_inset(fig, main, [*full_lines, *bounds])
     zoom_lines, zoom_bounds = plot_panel(zoom, detail, inflow, detail=True, code=code)
+    if inset:
+        zoom.set(xlabel=None, ylabel=None)
     main.set_title("Full release range", loc="left", fontsize=11, weight="bold", color=INK)
     zoom.set_title("Zoomed view", loc="left", fontsize=11, weight="bold", color=INK)
     fig.legend(handles=bounds, loc="lower left", bbox_to_anchor=(left - 0.01, 0.192),
@@ -288,17 +325,17 @@ def write_sheet(full, detail, inflow, output, code="COT", title="Cottage Grove R
     shown_zoom = label_panel(zoom, zoom_lines, zoom_bounds)
     reduced = len(shown_main) < len(full_lines) or len(shown_zoom) < len(zoom_lines)
     if reduced:
-        fig.text(0.95, 0.872, "Selected contours shown", ha="right", fontsize=8.5, color=INK)
+        fig.text(0.95, 0.901, "Selected contours shown", ha="right", fontsize=8.5, color=INK)
     example = add_example(zoom, shown_zoom, inflow, code)
     if example:
         fig.text(left, 0.222, f"Worked example   {example}",
                  fontsize=9.5, color=EXAMPLE, weight="bold")
-    add_title_block(fig, full, inflow, code, landscape=inset)
+    add_title_block(fig, full, inflow, code, title, landscape=inset)
     name = f"{code}_{'inflow' if inflow else 'rate_of_rise'}_{'inset' if inset else 'reference'}"
     for extension in formats:
         fig.savefig(output / f"{name}.{extension}", dpi=240)
     plt.close(fig)
-    return len(shown_main), len(full_lines), len(shown_zoom), len(zoom_lines)
+    return len(shown_main), len(full_lines), len(shown_zoom), len(zoom_lines), embedded
 
 
 def main():

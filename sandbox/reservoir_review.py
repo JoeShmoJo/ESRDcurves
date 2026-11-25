@@ -48,16 +48,11 @@ def derive_zoom(full):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=SOURCE.parent / "review" / "esrd" / "png")
+    parser.add_argument("--output", type=Path, default=SOURCE.parent / "review" / "esrd")
     parser.add_argument("--reservoir", choices=RESERVOIRS, action="append")
-    parser.add_argument("--inset", action="store_true", help="Render the Cottage Grove inset trial")
+    parser.add_argument("--layout", choices=("both", "inset", "stacked"), default="both")
     args = parser.parse_args()
-    if args.inset and args.reservoir not in (None, ["COT"]):
-        parser.error("The inset trial is currently tuned for Cottage Grove.")
-    if args.inset:
-        args.reservoir = ["COT"]
-    output = args.output.resolve()
-    output.mkdir(parents=True, exist_ok=True)
+    layouts = {"stacked": ("png", False), "inset": ("inset", True)}
 
     for code in args.reservoir or RESERVOIRS:
         full_path, zoom_path = profiles(code)
@@ -68,16 +63,24 @@ def main():
             print(f"{code} inputs: {error}", flush=True)
             continue
 
-        for inflow in (True, False):
-            kind = "inflow" if inflow else "rate of rise"
-            try:
-                counts = write_sheet(full, detail, inflow, output, code=code,
-                            title=f"{RESERVOIRS[code]} Reservoir", formats=("png",), inset=args.inset)
-                print(f"{code} {kind}: saved (full {counts[0]}/{counts[1]}, zoom {counts[2]}/{counts[3]})", flush=True)
-            except ValueError as error:
-                print(f"{code} {kind}: {error}", flush=True)
-            finally:
-                plt.close("all")
+        for layout, (folder, inset) in layouts.items():
+            if args.layout != "both" and layout != args.layout:
+                continue
+            output = args.output.resolve() / folder
+            output.mkdir(parents=True, exist_ok=True)
+            for inflow in (True, False):
+                kind = "inflow" if inflow else "rate of rise"
+                try:
+                    counts = write_sheet(full, detail, inflow, output, code=code,
+                                         title=f"{RESERVOIRS[code]} Reservoir",
+                                         formats=("png",), inset=inset)
+                    placement = "embedded" if counts[4] else "beside chart" if inset else "stacked"
+                    print(f"{code} {kind} {layout}: {placement} "
+                          f"(full {counts[0]}/{counts[1]}, zoom {counts[2]}/{counts[3]})", flush=True)
+                except ValueError as error:
+                    print(f"{code} {kind} {layout}: {error}", flush=True)
+                finally:
+                    plt.close("all")
 
 
 if __name__ == "__main__":
